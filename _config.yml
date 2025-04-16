@@ -324,3 +324,21 @@ defaults:
       comments: # true
       share: true
       related: true
+
+      # Navigation links
+navigation:
+  - title: "Home"
+    url: "/"
+  - title: "About"
+    url: "/about/"
+  - title: "Projects"
+    url: "/projects/"
+  - title: "Media Impact"
+    url: "/media/"
+  - title: "Awards & Certifications"
+    url: "/awards/"
+  - title: "Resume"
+    url: "/resume/"
+  - title: "Interests & Contact"
+    url: "/interests/"
+
