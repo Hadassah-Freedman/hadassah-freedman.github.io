@@ -1,27 +1,36 @@
 ---
 layout: default
 title: Projects
-permalink: /projects/
 ---
 
 <style>
+body {
+  background-color: black;
+  color: white;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
 .project-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
   margin: 2rem 0;
 }
+
 .project-tile {
   position: relative;
   overflow: hidden;
   border-radius: 12px;
   cursor: pointer;
 }
+
 .project-tile img {
   width: 100%;
+  height: auto;
   display: block;
   transition: 0.3s ease-in-out;
 }
+
 .project-title {
   position: absolute;
   bottom: 0;
@@ -35,55 +44,49 @@ permalink: /projects/
   opacity: 0;
   transition: opacity 0.3s;
 }
+
 .project-tile:hover img {
   transform: scale(1.05);
 }
+
 .project-tile:hover .project-title {
   opacity: 1;
 }
 </style>
 
-<h1>My Projects</h1>
+<h1 style="text-align: center;">Projects</h1>
+
 <div class="project-grid">
-  <a href="/ac-project" class="project-tile">
-    <img src="assets/images/projects/ac.png" alt="AC Project">
-    <div class="project-title">AC Project</div>
+  <a href="/ac" class="project-tile">
+    <img src="assets/images/projects/ac.png" alt="AC Dehumidifier">
+    <div class="project-title">Combined Air Conditioner + Dehumidification System</div>
   </a>
-
-  <a href="/BrailleBox-projects" class="project-tile">
-    <img src="assets/images/projects/braillebox.png" alt="BrailleBox">
-    <div class="project-title">BrailleBox</div>
-  </a>
-
-  <a href="/CadEngine-projects" class="project-tile">
-    <img src="assets/images/projects/cadengine.png" alt="CAD Engine">
-    <div class="project-title">CAD Engine</div>
-  </a>
-
-  <a href="/Caffeinator-project" class="project-tile">
-    <img src="assets/images/projects/caffeinator.png" alt="Caffeinator">
-    <div class="project-title">Caffeinator</div>
-  </a>
-
-  <a href="/Crispinator-project" class="project-tile">
-    <img src="assets/images/projects/crispinator.png" alt="Crispinator">
-    <div class="project-title">Crispinator</div>
-  </a>
-
-  <a href="/MiniOven-Projects" class="project-tile">
-    <img src="assets/images/projects/minioven.png" alt="Mini Oven">
-    <div class="project-title">Mini Oven</div>
-  </a>
-
-  <a href="/Robot-projects" class="project-tile">
-    <img src="assets/images/projects/robot.png" alt="Robot">
-    <div class="project-title">Robot</div>
-  </a>
-
-  <a href="/obliterator-project" class="project-tile">
+  <a href="/obliterator" class="project-tile">
     <img src="assets/images/projects/obliterator.png" alt="Obliterator">
-    <div class="project-title">Obliterator</div>
+    <div class="project-title">Chefman Obliterator</div>
+  </a>
+  <a href="/coffee" class="project-tile">
+    <img src="assets/images/projects/coffee.png" alt="Caffeinator">
+    <div class="project-title">Chefman Caffeinator</div>
+  </a>
+  <a href="/crisp" class="project-tile">
+    <img src="assets/images/projects/crisp.png" alt="Crispinator">
+    <div class="project-title">Chefman Crispinator</div>
+  </a>
+  <a href="/mini" class="project-tile">
+    <img src="assets/images/projects/mini.png" alt="Mini Oven">
+    <div class="project-title">Chef IQ Mini Oven Touchscreen-Probe Assembly</div>
+  </a>
+  <a href="/braille" class="project-tile">
+    <img src="assets/images/projects/braille.png" alt="Braille Box">
+    <div class="project-title">Braille Box for the Blind</div>
+  </a>
+  <a href="/robot" class="project-tile">
+    <img src="assets/images/projects/robot.png" alt="NYU Robot">
+    <div class="project-title">NYU Line Follower Robot</div>
+  </a>
+  <a href="/engine" class="project-tile">
+    <img src="assets/images/projects/engine.png" alt="Engine CAD">
+    <div class="project-title">CAD: Small Car Engine</div>
   </a>
 </div>
-
-
