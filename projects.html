@@ -1,0 +1,80 @@
+---
+layout: default
+title: Projects
+permalink: /projects/
+---
+
+<style>
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+.project-tile {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  cursor: pointer;
+}
+.project-tile img {
+  width: 100%;
+  display: block;
+  transition: 0.3s ease-in-out;
+}
+.project-title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.65);
+  color: #fff;
+  text-align: center;
+  padding: 0.75rem;
+  font-size: 1rem;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.project-tile:hover img {
+  transform: scale(1.05);
+}
+.project-tile:hover .project-title {
+  opacity: 1;
+}
+</style>
+
+<h1>My Projects</h1>
+<div class="project-grid">
+  <a href="/projects/ac/" class="project-tile">
+    <img src="/assets/images/projects/ac.png" alt="AC Dehumidifier System">
+    <div class="project-title">Combined Air Conditioner & Dehumidification System</div>
+  </a>
+  <a href="/projects/obliterator/" class="project-tile">
+    <img src="/assets/images/projects/obliterator.png" alt="Obliterator">
+    <div class="project-title">Project Manager Intern – Chefman Obliterator</div>
+  </a>
+  <a href="/projects/coffee/" class="project-tile">
+    <img src="/assets/images/projects/coffee.png" alt="Caffeinator">
+    <div class="project-title">Project Manager Intern – Chefman Caffeinator</div>
+  </a>
+  <a href="/projects/crisp/" class="project-tile">
+    <img src="/assets/images/projects/crisp.png" alt="Crispinator">
+    <div class="project-title">Project Manager Intern – Chefman Crispinator</div>
+  </a>
+  <a href="/projects/mini/" class="project-tile">
+    <img src="/assets/images/projects/mini.png" alt="Mini Oven">
+    <div class="project-title">Mechanical Eng. Intern – Chef IQ MiniOven Touchscreen</div>
+  </a>
+  <a href="/projects/braille/" class="project-tile">
+    <img src="/assets/images/projects/braille.png" alt="Braille Box">
+    <div class="project-title">Braille Box for the Blind</div>
+  </a>
+  <a href="/projects/robot/" class="project-tile">
+    <img src="/assets/images/projects/robot.png" alt="Line Following Robot">
+    <div class="project-title">NYU Line Following Robot</div>
+  </a>
+  <a href="/projects/engine/" class="project-tile">
+    <img src="/assets/images/projects/engine.png" alt="Small Car Engine CAD">
+    <div class="project-title">CAD Small Car Engine</div>
+  </a>
+</div>
